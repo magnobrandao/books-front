@@ -1,10 +1,11 @@
 
+import { Button } from '@mui/material'
 import { Navigate, Route, Routes } from 'react-router-dom'
 
 function AppRoutes() {
     return (
         <Routes>
-            <Route path='/home' element={<h1>Page Home</h1>} />
+            <Route path='/home' element={<Button>HOME</Button>} />
             <Route path='*' element={<Navigate to="/home" />} />
         </Routes>
 
