@@ -1,11 +1,11 @@
 
 import { Navigate, Route, Routes } from 'react-router-dom'
-import CardBook from '../shared/components/Card-book'
+import ButtonSearch from '../shared/components/Button-search'
 
 function AppRoutes() {
     return (
         <Routes>
-            <Route path='/home' element={<CardBook title='titulo do livro' />} />
+            <Route path='/home' element={<ButtonSearch />} />
             <Route path='*' element={<Navigate to="/home" />} />
         </Routes>
 

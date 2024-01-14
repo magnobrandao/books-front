@@ -10,6 +10,5 @@ export const DefaultTheme = createTheme({
       main: "#FE9800",
       light: "#7B7B7B",
     },
-    background: {},
   },
 });

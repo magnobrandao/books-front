@@ -1,4 +1,5 @@
 import { Grid, Typography, Button } from "@mui/material";
+import { DefaultTheme } from "../../themes";
 
 type TProps = {
     title: string;
@@ -30,7 +31,12 @@ export default function CardBook({ title, url }: TProps) {
                 <Button
                     onClick={() => window.open(url, "_blank")}
                     variant="contained"
-
+                    sx={{
+                        backgroundColor: DefaultTheme.palette.secondary.main,
+                        '&:hover': {
+                            backgroundColor: `${DefaultTheme.palette.secondary.main} !important`,
+                        },
+                    }}
 
                 >
                     VER DETALHES
