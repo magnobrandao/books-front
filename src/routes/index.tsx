@@ -1,11 +1,12 @@
 
 import { Navigate, Route, Routes } from 'react-router-dom'
-import ButtonSearch from '../shared/components/Button-search'
+import Header from '../shared/components/Header'
+import Home from '../pages/Home'
 
 function AppRoutes() {
     return (
         <Routes>
-            <Route path='/home' element={<ButtonSearch />} />
+            <Route path='/home' element={<Home />} />
             <Route path='*' element={<Navigate to="/home" />} />
         </Routes>
 
