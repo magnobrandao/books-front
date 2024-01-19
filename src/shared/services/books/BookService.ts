@@ -1,14 +1,9 @@
+import { TBook } from "../../types/book";
 import api from "../api";
 
-export type TBook = {
-  data: Record<string, string>;
-  id: string;
-  name: string;
-};
-
-const getAll = async (page = 1, text = "Great"): Promise<TBook> => {
+const getAll = async (page: number): Promise<TBook> => {
   try {
-    const { data } = await api.get(`/books?text=${text}&?page=${page}&limit=8`);
+    const { data } = await api.get(`/books?page=${page}&limit=4`);
 
     return data;
   } catch (error) {
@@ -18,7 +13,17 @@ const getAll = async (page = 1, text = "Great"): Promise<TBook> => {
 
 const findById = async (): Promise<any> => {};
 
-const search = async (): Promise<any> => {};
+const search = async (text = ""): Promise<TBook> => {
+  try {
+    const { data } = await api.get(
+      `/books/search?text=${text}&?page=1&limit=4`
+    );
+
+    return data;
+  } catch (error) {
+    throw error;
+  }
+};
 
 export const BookService = {
   getAll,
