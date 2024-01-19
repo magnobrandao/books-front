@@ -1,46 +1,62 @@
-# Getting Started with Create React App
+# Projeto Técnico - Magno Book Front-ennd
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O projeto proposto envolve que fosse criado uma página que permitisse o usuário pesquisar o livro que ele deseja, buscando no backend, além de permitir ver detalhes do livro.
 
-## Available Scripts
+## Recursos Utilizados no Projeto
 
-In the project directory, you can run:
+**Typescript:** Foi empregado o Typescript para melhorar a qualidade do código, através da adoção de tipagem estática.
 
-### `npm start`
+**React:** A biblioteca React foi fundamental para criar interfaces de usuário interativas e responsivas. Com ela, foi possível dividir a aplicação em componentes reutilizáveis, facilitando o desenvolvimento e a manutenção do código.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Branches e Convenção de Commits:** A metodologia de trabalho com branches foi adotada para organizar o desenvolvimento de forma mais eficiente. Cada funcionalidade ou correção foi desenvolvida em sua própria branch, permitindo uma implementação isolada e segura. A convenção de commits adotada tornou o histórico de alterações mais claro e compreensível, facilitando o entendimento do que foi modificado em cada etapa do desenvolvimento.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Material UI:** A biblioteca de componentes Material UI foi utilizada para acelerar o desenvolvimento da interface de usuário.
 
-### `npm test`
+## Funcionalidades Implementadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Página Inicial:
+  -Exibição de uma lista de livros obtidos do Backend.
+  -Implementação de paginação
 
-### `npm run build`
+- Página de Detalhes do Livro:
+  -Clicando em um livro exibido, será redirecionado para um modal com detalhes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Funcionalidade de Pesquisa:
+  Foi implementado um mecanisco de pesquisa, utilizando o Debounce para otimização das requisições.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Design Responsivo
+  Utilizado o máximo no projeto para manter um Design Responsivo e limpo.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Design de UI/UX:
+  Criou-se um projeto base no figma da página Home, para inicialização dos conceitos de Layout e prototipação no Figma.
 
-### `npm run eject`
+- ## Visualização do Projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![App Screenshot](https://i.imgur.com/wD5OSjk.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🔗 Pré-requisitos
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas: git e node.js. Você também vai precisar de um editor de código, recomendo o VS Code. Além disso, você precisará instalar e rodar o Backend em seu computador. Segue o link do repositório no Github: 
+[Projeto Backend](https://github.com/magnobrandao/books-api)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Rodando o Projeto
 
-## Learn More
+```bash
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Clone este repositório (ou download )
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ git clone git@github.com:magnobrandao/books-front.git
+
+# Acesse a pasta do projeto no terminal/cmd
+
+  $ books-front
+
+# Instale as dependências
+
+  $ npm install
+
+# Após a instalação, execute o comando para rodar a aplicação
+
+  $ npm start
+```
+
