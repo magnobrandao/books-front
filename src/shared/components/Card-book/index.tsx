@@ -24,7 +24,7 @@ export default function CardBook({ title, url }: TProps) {
             </Grid>
 
             <Grid item container direction="column" alignItems="center" gap={1} mb={2}>
-                <Typography fontSize={21} fontWeight="500">
+                <Typography fontSize={16} fontWeight="500">
                     {title}
                 </Typography>
 
