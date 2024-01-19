@@ -60,5 +60,3 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
   $ npm start
 ```
 
-
-To learn React, check out the 
