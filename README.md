@@ -49,7 +49,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
 # Acesse a pasta do projeto no terminal/cmd
 
-  $ books-front
+  $ cd books-front
 
 # Instale as dependências
 
