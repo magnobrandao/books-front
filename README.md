@@ -32,7 +32,7 @@ O projeto proposto envolve que fosse criado uma página que permitisse o usuári
 
 - ## Visualização do Projeto
 
-![App Screenshot](https://imgur.com/a/6DQLmLO)
+![App Screenshot](https://i.imgur.com/wD5OSjk.png)
 
 ## 🔗 Pré-requisitos
 
